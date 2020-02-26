@@ -13,12 +13,14 @@ import org.junit.runners.Parameterized.Parameters;
 
 @RunWith(Parameterized.class)
 public class TestPara {
+	//针对一行数据，定义与之相对应的实例变量，
+	//{1,1,2}
 	private int input1;
 	private int input2;
 	private int expected;
 	private Calculate cal = null;
 	
-	public TestPara(int input1,int input2,int expected){
+	public TestPara(int input1, int input2, int expected){
 		this.input1 = input1;
 		this.input2 = input2;
 		this.expected = expected;

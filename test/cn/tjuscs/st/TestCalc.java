@@ -13,11 +13,11 @@ public class TestCalc {
 		cal = new Calculate();
 	}
 	
-//	@Test
-//	public void testAdd(){
-//		
-//		assertEquals(5, cal.add(2, 3));
-//	}
+	@Test
+	public void testAdd(){
+		
+		assertEquals(5, cal.add(2, 3));
+	}
 	
 //	@Test(expected=ArithmeticException.class)
 //	public void testDivide(){
@@ -25,7 +25,7 @@ public class TestCalc {
 ////		assertEquals( 2, result);
 //	}
 	
-	@Test(timeout=300)
+	@Test(timeout=302)
 	public void testTime(){
 		try {
 			Thread.sleep(301);
