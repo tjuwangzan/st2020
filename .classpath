@@ -5,5 +5,12 @@
 	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="lib" path="lib/hamcrest-all-1.3.jar"/>
 	<classpathentry kind="lib" path="lib/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="seleniumlib/byte-buddy-1.8.15.jar"/>
+	<classpathentry kind="lib" path="seleniumlib/client-combined-3.141.59-sources.jar"/>
+	<classpathentry kind="lib" path="seleniumlib/client-combined-3.141.59.jar"/>
+	<classpathentry kind="lib" path="seleniumlib/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="seleniumlib/guava-25.0-jre.jar"/>
+	<classpathentry kind="lib" path="seleniumlib/okhttp-3.11.0.jar"/>
+	<classpathentry kind="lib" path="seleniumlib/okio-1.14.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
