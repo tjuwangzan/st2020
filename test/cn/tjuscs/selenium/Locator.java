@@ -30,7 +30,14 @@ public class Locator {
 		
 //		WebElement submitName = driver.findElement(By.xpath("//*[@id='loginForm']/tbody/tr[6]/td/input[1]"));
 	
+		WebElement textShow = driver.findElement(By.xpath("/html/body/section[1]/div/div/div[1]/h1"));
+		if(textShow.getText().equals("PHILIP GILBERT2")) {
+			System.out.println("Success!");
+		}else {
+			System.out.println("Failed!");
+		}
 		
+//		driver.close();
 	}
 	
 	

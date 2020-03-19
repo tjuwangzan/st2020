@@ -2,6 +2,7 @@ package cn.tjuscs.selenium;
 
 
 
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -10,11 +11,13 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class FirstSelenium {
 	public static void main(String[] args) {
-		// declaration and instantiation of objects/variables
+		// 一、declaration and instantiation of objects/variables
+		//1. 定义FireFox浏览器驱动
 		String driverPath = System.getProperty("user.dir") + "/src/resources/driver/geckodriver.exe";
 		System.setProperty("webdriver.gecko.driver", driverPath);
 		WebDriver driver = new FirefoxDriver();
-		
+			
+		//2. 定义Chrome浏览器驱动
 //		String driverPath = System.getProperty("user.dir") + "/src/resources/driver/chromedriver.exe";
 //		System.setProperty("webdriver.chrome.driver", driverPath);
 //		WebDriver driver = new ChromeDriver();
@@ -28,19 +31,20 @@ public class FirstSelenium {
 //		driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
     	
 
-        
+        //二、定义要访问的网址
         String baseUrl = "http://www.tju.edu.cn";
         String expectedTitle = "天津大学";
         String actualTitle = "";
 
-        // launch Fire fox and direct it to the Base URL
+        //三、访问给定的网址launch Fire fox and direct it to the Base URL
         driver.get(baseUrl);
 
-        // get the actual value of the title
+        //四、得到网址的title， get the actual value of the title
         actualTitle = driver.getTitle();
+        
 
         /*
-         * compare the actual title of the page with the expected one and print
+         * 五、比对Title和预期值compare the actual title of the page with the expected one and print
          * the result as "Passed" or "Failed"
          */
         if (actualTitle.contentEquals(expectedTitle)){
