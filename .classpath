@@ -13,5 +13,6 @@
 	<classpathentry kind="lib" path="seleniumlib/okhttp-3.11.0.jar"/>
 	<classpathentry kind="lib" path="seleniumlib/okio-1.14.0.jar"/>
 	<classpathentry kind="lib" path="lib/easymock-3.4.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.28-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

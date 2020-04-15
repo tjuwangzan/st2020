@@ -13,8 +13,8 @@ public class UserService implements IUserService {
 	}
 	
 	public UserService() {
-//		userDao = new UserStubDao();
-		userDao = new UserDao();
+		userDao = new UserStubDao();
+//		userDao = new UserDao();
 	}
 
 	@Override
@@ -34,7 +34,7 @@ public class UserService implements IUserService {
 
 	@Override
 	public User load(String username) {
-		userDao.delete("abc");
+//		userDao.delete("abc");
 		userDao.load(username);
 		return userDao.load(username);
 	}
